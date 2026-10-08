@@ -1,1 +1,9 @@
 /* css styles */
+
+a {
+  color: darkred;
+}
+
+body {
+  font-family: Georgia, serif;
+}
