@@ -34,3 +34,15 @@ Route used: quarto publish gh-pages
 git add .
 git commit -m "Add command log"
 git push
+
+bonus1
+Edited styles.css to change the link color and body font.
+Confirmed _quarto.yml uses styles.css.
+
+bonus2
+Changed the site to paired light and dark themes using flatly and darkly.
+
+quarto publish gh-pages
+git add .
+git commit -m "Add bonus styling and themes"
+git push
