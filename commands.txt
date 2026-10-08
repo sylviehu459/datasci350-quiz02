@@ -8,15 +8,29 @@ quarto create project website .
 git add .gitignore
 git commit -m "Add gitignore"
 
-3.
-website:
-  title: "Box Office Numbers"
-
 4.
 rm about.qmd
-      - href: budget-revenue.qmd
-        text: Budget and Revenue
-      - href: runtime-rating.qmd
-        text: Runtime and Ratings
-      - href: bond.qmd
-        text: The Bond Films
+
+7.
+touch budget-revenue.qmd
+
+8.
+touch runtime-rating.qmd
+
+9.
+touch bond.qmd
+
+10.
+quarto render
+ls -a
+git add .
+git commit -m "Add site pages and freeze"
+
+11.
+quarto publish gh-pages
+Route used: quarto publish gh-pages
+
+13.
+git add .
+git commit -m "Add command log"
+git push
