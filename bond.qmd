@@ -1,0 +1,24 @@
+---
+title: "The Bond Films"
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+This page examines the James Bond films in the dataset.
+
+```{python}
+bond = films[films["franchise"] == "James Bond"]
+bond = bond.sort_values("year")
+
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Worldwide revenue (millions of US dollars)")
+plt.show()
+```
+
+The Bond films in this dataset run from `{python} int(bond["year"].min())` to `{python} int(bond["year"].max())`.

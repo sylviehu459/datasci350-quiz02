@@ -1,0 +1,22 @@
+setup
+touch commands.txt
+
+1.
+quarto create project website .
+
+2.
+git add .gitignore
+git commit -m "Add gitignore"
+
+3.
+website:
+  title: "Box Office Numbers"
+
+4.
+rm about.qmd
+      - href: budget-revenue.qmd
+        text: Budget and Revenue
+      - href: runtime-rating.qmd
+        text: Runtime and Ratings
+      - href: bond.qmd
+        text: The Bond Films
